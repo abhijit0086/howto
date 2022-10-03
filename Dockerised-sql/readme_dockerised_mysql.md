@@ -35,8 +35,8 @@ docker run --name some-mysql \
 docker exec -it some-mysql bash
 
 ### Step 2. Login to mysql
--># mysql -u root -p
--># my-secret-pw
+># mysql -u root -p
+># my-secret-pw
 
 ### Step 3. Create user for remote access
 CREATE USER 'wnsuser1'@'%' IDENTIFIED BY 'wnspassword1';
