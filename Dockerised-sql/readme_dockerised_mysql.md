@@ -30,6 +30,7 @@ docker run --name some-mysql \
     * `--envfile .envfile-SQL` here filelocation is same where docker command is run.
   * You can select the image version as required.
 
+## Accessing container
 ### get inside docker
 docker exec -it some-mysql bash
 
