@@ -4,7 +4,7 @@
 * Docker image "mysql:latest" or any specific image required from docker hub.
 * Any Folder on host to persist data of container_mysql.
   
-## Steps
+## Installation Steps
 ### Step 1. Pulling image from docker hub
 $ docker pull mysql:latest
 
