@@ -31,14 +31,14 @@ docker run --name some-mysql \
   * You can select the image version as required.
 
 ## Accessing container
-### get inside docker
+### Step 1. Get inside docker
 docker exec -it some-mysql bash
 
-### login to mysql
+### Step 2. Login to mysql
 -># mysql -u root -p
 -># my-secret-pw
 
-### create user for remote access
+### Step 3. Create user for remote access
 CREATE USER 'wnsuser1'@'%' IDENTIFIED BY 'wnspassword1';
 GRANT ALL PRIVILEGES ON *.* TO 'wnsuser1'@'%';
 flush privileges;
