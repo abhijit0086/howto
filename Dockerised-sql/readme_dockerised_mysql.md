@@ -29,3 +29,16 @@ docker run --name some-mysql \
     * add argument  `--envfile filelocation` to use environment variables from file.
     * `--envfile .envfile-SQL` here filelocation is same where docker command is run.
   * You can select the image version as required.
+
+### get inside docker
+docker exec -it some-mysql bash
+
+### login to mysql
+-># mysql -u root -p
+-># my-secret-pw
+
+### create user for remote access
+CREATE USER 'wnsuser1'@'%' IDENTIFIED BY 'wnspassword1';
+GRANT ALL PRIVILEGES ON *.* TO 'wnsuser1'@'%';
+flush privileges;
+
