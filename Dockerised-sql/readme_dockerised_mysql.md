@@ -1,5 +1,5 @@
 # How to run the mysql container
-## Prequisites
+## Prerequisites
 * Install Docker 
 * Docker image "mysql:latest" or any specific image required from docker hub.
 * Any Folder on host to persist data of container_mysql.
